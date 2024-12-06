@@ -1,0 +1,292 @@
+/* Import Tailwind's base styles */
+@tailwind base;
+/* Import Tailwind's component styles */
+@tailwind components;
+/* Import Tailwind's utility styles */
+@tailwind utilities;
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+form label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form p {
+  font-size: 0.875rem;
+  color: #f44336;
+  margin-top: 4px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+table td button {
+  background-color: #e57373;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+
+table td button:hover {
+  background-color: #e53935;
+}
+
+/* Flex-based layout for Product List */
+.product-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0;
+  transition: background-color 0.3s ease;
+}
+
+.product-row:hover {
+  background-color: #f9f9f9;
+}
+
+/* Column style: setting fixed width for each column */
+.product-row > div {
+  padding: 0 12px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Długie teksty będą przycinane z '...' */
+  white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+}
+
+.product-row > div:nth-child(1) {
+  width: 200px; /* Stała szerokość dla kolumny 'name' */
+}
+
+.product-row > div:nth-child(2) {
+  width: 150px; /* Stała szerokość dla kolumny 'category' */
+}
+
+.product-row > div:nth-child(3) {
+  width: 100px; /* Stała szerokość dla kolumny 'quantity' */
+}
+
+.product-row > div:nth-child(4) {
+  width: 150px; /* Stała szerokość dla kolumny 'unitPrice' */
+}
+
+.product-row > div:nth-child(5) {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 200px; /* Stała szerokość dla kolumny przycisków */
+}
+
+.product-row > div button {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Przycisk Edytuj */
+button.bg-blue-500 {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.bg-blue-500:hover {
+  background-color: #45a049;
+}
+
+/* Przycisk Usuń */
+button.bg-red-500 {
+  background-color: #e57373;
+  color: white;
+}
+
+button.bg-red-500:hover {
+  background-color: #e53935;
+}
+
+/* Adjust list container to ensure it's scrollable */
+.product-list-container {
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+/* Opcjonalnie: Jeżeli chcesz mieć tabelę z dokładnie równymi szerokościami, 
+   można dodać minimalną szerokość dla każdej kolumny. */
+.product-row > div {
+  width: 200px; /* Stała szerokość dla każdej kolumny */
+}
+
+/* Hover dla wierszy */
+.product-row:hover {
+  background-color: #f9f9f9;
+}
+
+
+button {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button.bg-blue-500 {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.bg-blue-500:hover {
+  background-color: #45a049;
+}
+
+button.bg-red-500 {
+  background-color: #e57373;
+  color: white;
+}
+
+button.bg-red-500:hover {
+  background-color: #e53935;
+}
+
+/* Product List Container */
+.product-list-container {
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+/* Filter Styles */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-container select,
+.filter-container input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filter-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-container button:hover {
+  background-color: #45a049;
+}
+
+/* Product Details Modal */
+.product-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-details .close-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.product-details .close-btn:hover {
+  background-color: #e53935;
+}

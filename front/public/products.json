@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "name":"Smartfon",
+        "category":"Elektronika",
+        "quantity":50,
+        "unitPrice":299.99,
+        "dateAdded":"2024-04-15",
+        "supplier":"TechSupp"
+    },
+    {
+        "id":2,
+        "name":"Smartfon 2",
+        "category":"Jedzenie",
+        "quantity":50,
+        "unitPrice":599.99,
+        "dateAdded":"2024-04-15",
+        "supplier":"FoodInc"
+    },
+    {
+        "id":3,
+        "name":"Smartfon 3",
+        "category":"Elektronika",
+        "quantity":50,
+        "unitPrice":499.99,
+        "dateAdded":"2024-04-15",
+        "supplier":"TechSupp"
+    }
+]
